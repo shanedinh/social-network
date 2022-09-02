@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shanedinh/social-network/issues"
   },
-  "homepage": "https://github.com/shanedinh/social-network#readme"
+  "homepage": "https://github.com/shanedinh/social-network#readme",
+  "dependencies": {
+    "mongoose": "^6.5.4"
+  }
 }

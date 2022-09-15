@@ -11,9 +11,9 @@ const {
 } = require("../../controllers/thought-controller");
 
 // set up GET all route
-router.route("/").get(getAllThoughts);
+router.route("/").get(getAllThoughts).post(createThought);
 
-router.route("/:userId").post(createThought);
+// router.route("/:id").post(createThought);
 
 // POST, PUT, and DELETE at /api/thoughts/:id
 router

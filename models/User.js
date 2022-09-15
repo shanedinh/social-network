@@ -13,6 +13,9 @@ const UserSchema = new Schema(
       required: true,
       unique: true,
       // add email validation
+      // https://mongoosejs.com/docs/validation.html
+      // https://mongoosejs.com/docs/schematypes.html
+      match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/],
     },
     thoughts: [
       {
